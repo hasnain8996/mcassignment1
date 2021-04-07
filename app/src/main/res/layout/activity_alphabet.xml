@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<http:androidx.constraintlayout.widget.ConstraintLayout xmlns:android="}
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas. android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlphabetActivity">
+
+<ImageView
+android:id="@+id/imageView"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_marginStart="2dp"
+android:layout_marginTop="ldp"
+app:layout_constraintStart_toStartof="parent"
+app:layout_constraintTop_toTopof="parent"
+app:srcCompat="edrawable/ic_launcher_background"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
