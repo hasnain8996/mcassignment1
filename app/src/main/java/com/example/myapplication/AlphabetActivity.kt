@@ -10,9 +10,9 @@ class AlphabetActivity : AppCompatActivity () {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_alphabet)
         var name :String = intent.getStringExtra("name")?.toLowerCase() ?:
-        Toast.makeText(applicationContext, name, Toast.LENGTH_LONG).show()
+        Toast.makeText(applicationContext,name, Toast.LENGTH_LONG).show()
         var id:int = resources.getIdentifier(name, "drawable", packageName)
-        imageView.setImageResource(id)
+        imageview.setImageResource(id)
         var mid:Int = resources.getIdentifier(name, "raw", packageName)
         var mp: MediaPlayer = MediaPlayer.create(applicationContext, mid)
         mp.start()

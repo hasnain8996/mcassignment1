@@ -10,19 +10,19 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var alpha = Array<String> (size:26) {""}
+        var alpha = Array<String> ( 26) {""}
         var j=65
         for(i:int in 0..25) {
-            alpha[i] = Character.toString(j.tochar())
+            alpha[i] = Character.toString(j.toChar())
             j++
         }
         var adapter = ArrayAdapter<String> (applicationContext, android.R.layout.simple_dropdown_item_1line,alpha)
                 gridview.adapter=adapter
-                gridview.setOnItemClickListener { adapterView, view, i, l->
-            var intent = Intent(applicationContext, AlphabetActivity::class.java)
-            intent.putExtra( "name", alpha[i])
-            startActivity (intent)
-        }
+                gridview.setOnItemClickListener { adapterView, view, i, l ->
+                    var intent = Intent(applicationContext, AlphabetActivity::class.java)
+                    intent.putExtra("name", alpha[i])
+                    startActivity(intent)
+                }
 
     }
 }

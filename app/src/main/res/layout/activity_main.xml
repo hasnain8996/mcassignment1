@@ -12,11 +12,11 @@
     android:layout_width="Odp"
     android:layout_height=" Odp"
     android:layout_marginStart="1dp"
-    android:layout _marginTop="1dp"
+    android:layout_marginTop="1dp"
     android:layout_marginEnd="ldp"
     android:layout_marginBottom="1dp"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndof="parent "
     app:layout_constraintStart_toStartof="parent "
-    app:layout_constraintTop_toTopof="parent" />
+    app:layout_constraintTop_toTopof="parent"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
